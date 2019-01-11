@@ -1,0 +1,57 @@
+*vim-lsp-javascript.txt* Sets up vim-lsp for TypeScript.
+
+=============================================================================
+CONTENTS                                        *vim-lsp-javascript-contents*
+
+  1. Introduction .......... |vim-lsp-javascript-introduction|
+  2. Install ............... |vim-lsp-javascript-install|
+    a. Plugin .............. |vim-lsp-javascript-install-plugin|
+    b. Language Server ..... |vim-lsp-javascript-install-language-server|
+  3. License ............... |vim-lsp-javascript-license|
+
+=============================================================================
+INTRODUCTION                                *vim-lsp-javascript-introduction*
+
+vim-lsp, https://github.com/prabirshrestha/vim-lsp, is a vim plugin that
+enables the use of use of the Language Service Protocol. vim-lsp-javascript
+provides the language server setup for JavaScript. So for you to use vim-lsp
+in your JavaScript project, all you need to do is have vim-lsp and
+vim-lsp-javascript installed and you'll have a working setup. In your
+JavaScript project, you must have a package.json file at the root. 
+
+See: :h vim-lsp.txt for more information on that plugin.
+
+=============================================================================
+INSTALL                        		         *vim-lsp-javascript-install*
+
+PLUGIN                                    *vim-lsp-javascript-install-plugin*
+
+To get the full lsp experience (with autocomplete and code navigation
+features). Use the following setup (using vim-plug) to install plugins
+
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/async.vim'
+  Plug 'prabirshrestha/vim-lsp'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'ryanolsonx/vim-lsp-javascript'
+
+
+LANGUAGE SERVER                  *vim-lsp-javascript-install-language-server*
+
+You must install the TypeScript language service so that we can get the LSP
+functionality for TypeScript. To do so, you'll need to:
+
+1. Install NPM and Node.js
+2. Install the language service.
+  
+  npm install -g typescript typescript-language-server
+
+=============================================================================
+LICENSE                        		         *vim-lsp-javascript-license*
+
+The MIT License (MIT)
+
+Full license text:
+https://github.com/ryanolsonx/vim-lsp-javascript/blob/master/LICENSE
+
+vim:tw=78:ts=8:ft=help:norl:noet:fen:
