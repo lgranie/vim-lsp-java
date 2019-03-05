@@ -1,0 +1,54 @@
+*vim-lsp-java.txt* Sets up vim-lsp for Java.
+
+=============================================================================
+CONTENTS                                        *vim-lsp-java-contents*
+
+  1. Introduction .......... |vim-lsp-java-introduction|
+  2. Install ............... |vim-lsp-java-install|
+    a. Plugin .............. |vim-lsp-java-install-plugin|
+    b. Language Server ..... |vim-lsp-java-install-language-server|
+  3. License ............... |vim-lsp-java-license|
+
+=============================================================================
+INTRODUCTION                                *vim-lsp-java-introduction*
+
+vim-lsp, https://github.com/prabirshrestha/vim-lsp, is a vim plugin that
+enables the use of use of the Language Service Protocol. vim-lsp-java
+provides the language server setup for Java. So for you to use vim-lsp
+in your Java project, all you need to do is have vim-lsp and
+vim-lsp-java installed and you'll have a working setup. In your
+Java project, you must have a pom.xml file at the root. 
+
+See: :h vim-lsp.txt for more information on that plugin.
+
+=============================================================================
+INSTALL                        		         *vim-lsp-java-install*
+
+PLUGIN                                    *vim-lsp-java-install-plugin*
+
+To get the full lsp experience (with autocomplete and code navigation
+features). Use the following setup (using vim-plug) to install plugins
+
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/async.vim'
+  Plug 'prabirshrestha/vim-lsp'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'lgranie/vim-lsp-java'
+
+
+LANGUAGE SERVER                  *vim-lsp-java-install-language-server*
+
+You must install the Eclipse JDT Language Server so that we can get the LSP
+functionality for Java. 
+
+https://github.com/eclipse/eclipse.jdt.ls
+
+=============================================================================
+LICENSE                        		         *vim-lsp-java-license*
+
+The MIT License (MIT)
+
+Full license text:
+https://github.com/lgranie/vim-lsp-java/blob/master/LICENSE
+
+vim:tw=78:ts=8:ft=help:norl:noet:fen:
