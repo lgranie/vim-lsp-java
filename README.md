@@ -8,7 +8,8 @@ Sets up [vim-lsp](https://github.com/prabirshrestha/vim-lsp) for Java.
 
 ** Eclipse JDT Language Server **
 
-This vim plugin depends on the Java Language Server.
+This vim plugin depends on Eclipse JDT Language Server.
+
 [Install Eclipse JDT Language Server](https://github.com/eclipse/eclipse.jdt.ls#building-from-the-command-line)
 
 ### Install the vim plugins
