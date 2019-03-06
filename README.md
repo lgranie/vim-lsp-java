@@ -6,13 +6,13 @@ Sets up [vim-lsp](https://github.com/prabirshrestha/vim-lsp) for Java.
 
 ### Dependencies
 
-This vim plugin depends on the Java Language Server.
-Install java language server using [eclipse.jdt.ls](https://github.com/eclipse/eclipse.jdt.ls):
+** Eclipse JDT Language Server **
 
-**Eclipse JDT Language Server**
-Refer to https://github.com/eclipse/eclipse.jdt.ls
+This vim plugin depends on Eclipse JDT Language Server.
 
-Install the vim plugins:
+[Install Eclipse JDT Language Server](https://github.com/eclipse/eclipse.jdt.ls#building-from-the-command-line)
+
+### Install the vim plugins
 
 ```viml
 " Dependencies
@@ -21,6 +21,11 @@ Plug 'prabirshrestha/vim-lsp'
 
 Plug 'lgranie/vim-lsp-java'
 ```
+
+### Edit jdtls file
+
+To launch the server, this plugin use a script you need to edit to your personnal installation
+~/.vim/bundle/vim-lsp-java/jdtls
 
 ## Usage
 
