@@ -18,7 +18,7 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'ryanolsonx/vim-lsp-javascript'
+Plug 'lgranie/vim-lsp-java'
 call plug#end()
 
 runtime! vim-sensible/plugin
