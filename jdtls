@@ -11,7 +11,7 @@ java -Declipse.application=org.eclipse.jdt.ls.core.id1 \
      -Dlog.level=ERROR \
      -noverify \
      -Xmx1G \
-     -jar $JDTLS_REPOSITORY/plugins/org.eclipse.equinox.launcher_$2.jar \
+     -jar $JDTLS_REPOSITORY/plugins/org.eclipse.equinox.launcher_$JDTLS_VERSION.jar \
      -configuration $JDTLS_REPOSITORY/$JDTLS_CONFIG \
      -data $JDTLS_WORKSPACE \
      --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
