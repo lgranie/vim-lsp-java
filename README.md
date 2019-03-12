@@ -33,14 +33,13 @@ let g:vim_lsp_java = {
     \ 'version': '1.5.300.v20190213-1655',
     \ 'config': 'config_linux',
     \ 'workspace': '/mnt/c/workspace',
-    \ 'basedir': lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'pom.xml')),
   \ },
 \ }
 ```
 
 ## Usage
 
-1. Open a java source file in a Maven project (vim-lsp-java needs a pom.xml file or update basedir value).
+1. Open a java source file in a Maven project (vim-lsp-java needs a pom.xml file).
 
 2. Enjoy!
 
