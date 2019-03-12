@@ -28,7 +28,7 @@ Edit your .vimrc file and configure like :
 
 ```" vim-lsp-java
 let g:vim_lsp_java = {
-  \ 'eclipse_jdt_ls' : {
+  \ 'eclipse_jdtls' : {
     \ 'repository': expand('~/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository'),
     \ 'version': '1.5.300.v20190213-1655',
     \ 'config': 'config_linux',
