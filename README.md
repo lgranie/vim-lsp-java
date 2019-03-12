@@ -39,7 +39,7 @@ let g:vim_lsp_java = {
 
 ## Usage
 
-1. Open file in project that the eclipse.jdt.ls '-data' as root.
+1. Open a java source file in a Maven project (vim-lsp-java needs a pom.xml file).
 
 2. Enjoy!
 
