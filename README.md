@@ -26,7 +26,7 @@ Plug 'lgranie/vim-lsp-java'
 
 Edit your .vimrc file and configure like :
 
-" vim-lsp-java
+```" vim-lsp-java
 let g:vim_lsp_java = {
   \ 'eclipse_jdt_ls' : {
     \ 'repository': expand('~/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository'),
@@ -35,7 +35,7 @@ let g:vim_lsp_java = {
     \ 'workspace': '/mnt/c/workspace',
   \ },
 \ }
-
+```
 
 ## Usage
 
