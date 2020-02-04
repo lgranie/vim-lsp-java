@@ -30,9 +30,9 @@ Edit your .vimrc file and configure like :
 let g:vim_lsp_java = {
   \ 'eclipse_jdtls' : {
     \ 'repository': expand('~/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository'),
-    \ 'version': '1.5.300.v20190213-1655',
+    \ 'version': '1.5.700.v20200107-1357',
     \ 'config': 'config_linux',
-    \ 'workspace': '/mnt/c/workspace',
+    \ 'workspace': expand('$WORKSPACE'),
   \ },
 \ }
 ```
