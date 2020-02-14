@@ -1,16 +1,16 @@
 #!/bin/sh
 
 JDTLS_REPOSITORY=$1
-JDTLS_VERSION=$2
-JDTLS_CONFIG=$3
-JDTLS_WORKSPACE=$4
+JDTLS_LAUNCHER=$(ls $JDTLS_REPOSITORY/plugins/org.eclipse.equinox.launcher_*.jar)
+JDTLS_CONFIG=$2
+JDTLS_WORKSPACE=$3
 
 java -Declipse.application=org.eclipse.jdt.ls.core.id1 \
      -Dosgi.bundles.defaultStartLevel=4 \
      -Declipse.product=org.eclipse.jdt.ls.core.product \
      -Dlog.level=ALL \
      -noverify \
-     -jar $JDTLS_REPOSITORY/plugins/org.eclipse.equinox.launcher_$JDTLS_VERSION.jar \
+     -jar $JDTLS_LAUNCHER \
      -configuration $JDTLS_REPOSITORY/$JDTLS_CONFIG \
      -data $JDTLS_WORKSPACE \
      # http://www.nicolasbize.com/blog/7-tips-to-speed-up-eclipse/
